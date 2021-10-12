@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="register_reasons">
+        <item>New stock</item>
+        <item>Barcode Issue</item>
+        <item>Delivery</item>
+        <item>Equestrian stock</item>
+        <item>Incorrect stock count</item>
+        <item>Return</item>
+        <item>Showroom</item>
+        <item>Unchecked</item>
+    </string-array>
+</resources>

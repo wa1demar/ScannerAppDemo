@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">ZebraScannerAppDemo</string>
+
+    <string name="ok">OK</string>
+    <string name="error">Error</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="reset">Reset</string>
+
+    <string name="msg_unknown">Something went wrong</string>
+    <string name="msg_start_scan_for_add_items">Start scan for add items</string>
+    <string name="msg_are_you_sure_you_want_to_clear_all">Are you sure you want to clear form?</string>
+
+    <string name="msg_confirm_logout">Are you sure you want to logout?</string>
+    <string name="msg_clear_form">Clear form before exit?</string>
+
+    <string name="product_remove_1_label">×1</string>
+    <string name="product_remove_all_label">All (%d)</string>
+    <string name="product_info_label">Info</string>
+
+    <string name="error_no_internet_connection">No Internet connection</string>
+    <string name="error_server_not_responding">Server Error</string>
+    <string name="error_item_not_found">Item not found</string>
+    <string name="error_invalid_request">Invalid data</string>
+    <string name="error_empty_field">Field cannot be empty</string>
+    <string name="msg_no_internet_connection">You can\'t continue working until connectivity is available</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Home</string>
+    <string name="home_welcome_subtitle_morning">Good morning %s</string>
+    <string name="home_welcome_subtitle_day">Good afternoon %s</string>
+    <string name="home_welcome_subtitle_evening">Good evening %s</string>
+    <string name="home_welcome_subtitle_night">Good night %s</string>
+
+    <!-- Login screen -->
+    <string name="login_title">Login</string>
+    <string name="login_description">Please login to continue:</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="register_stock">Register Stock</string>
+    <string name="logout">Logout</string>
+
+    <!-- Register stock -->
+    <string name="register_stock_title">Register Stock</string>
+    <string name="register_stock_reason">Reason</string>
+    <string name="register_stock_scan_container">Scan Container</string>
+    <string name="register_stock_scan_item">Scan Item</string>
+    <string name="register_stock_items_scanned">Items Scanned</string>
+    <string name="register_stock_register">Register</string>
+    <string name="register_stock_product_removed_msg">Product removed</string>
+    <string name="register_stock_item_removed_msg">Item removed</string>
+    <string name="register_stock_add_at_least_one_product_to_stock_msg">Add at least one product to stock</string>
+
+    <string name="msg_are_you_sure_you_want_to_decrease_item">
+        Are you sure you want to remove item?
+    </string>
+    <string name="msg_are_you_sure_you_want_to_remove_all_item">
+        Are you sure you want to remove all items?
+    </string>
+
+</resources>

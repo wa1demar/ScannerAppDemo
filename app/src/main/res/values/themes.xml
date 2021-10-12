@@ -1,0 +1,132 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.App" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/app_link_color</item>
+        <item name="colorPrimaryVariant">@color/gray_500</item>
+        <item name="colorOnPrimary">@color/gray_700</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/cyan_600</item>
+        <item name="colorSecondaryVariant">@color/cyan_800</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="l">true</item>
+        <!-- navigation bar color. -->
+        <item name="android:navigationBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="p">true</item>
+        <item name="android:navigationBarDividerColor" tools:targetApi="p">
+            ?attr/colorControlHighlight
+        </item>
+        <!-- Customize your theme here. -->
+        <item name="colorControlActivated">@color/gray_900</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorOnBackground">@color/black</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorError">@color/red_600</item>
+        <item name="colorOnError">@color/white</item>
+
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout.Default</item>
+    </style>
+
+    <style name="Theme.App.Launcher">
+        <item name="android:windowBackground">@drawable/launcher_window</item>
+    </style>
+
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/color_states_materialbutton</item>
+    </style>
+
+    <style name="Widget.WMS.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/white</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.WMS.Toolbar</item>
+        <item name="titleTextAppearance">@style/TextAppearance.MaterialComponents.Headline6</item>
+    </style>
+
+    <style name="ThemeOverlay.WMS.Toolbar" parent="">
+
+    </style>
+
+    <style name="Widget.App.Button.Icon" parent="Widget.MaterialComponents.Button.Icon">
+        <item name="rippleColor">@color/text_button_ripple_color</item>
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+        <item name="iconSize">16dp</item>
+        <item name="iconGravity">start</item>
+        <item name="iconPadding">5dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+
+    <style name="Widget.App.Button.OutlinedButton.Icon" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="rippleColor">@color/text_button_ripple_color</item>
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+        <item name="iconSize">16dp</item>
+        <item name="iconGravity">start</item>
+        <item name="iconPadding">5dp</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout.Default" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxStrokeColor">@color/app_link_color</item>
+        <item name="boxBackgroundColor">?attr/colorSurface</item>
+        <item name="materialThemeOverlay">
+            @style/ThemeOverlay.App.TextInputEditText.FilledBox
+        </item>
+        <item name="hintTextColor">@color/gray_500</item>
+        <item name="android:textColorHint">@color/gray_500</item>
+        <item name="hintTextAppearance">@style/TextAppearance.App.Caption</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputEditText.FilledBox" parent="ThemeOverlay.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="colorControlActivated">@color/app_link_color</item>
+        <item name="colorControlNormal">@color/gray_300</item>
+        <item name="rippleColor">@color/text_button_ripple_color</item>
+        <item name="editTextStyle">@style/Widget.App.TextInputEditText.FilledBox</item>
+    </style>
+
+    <style name="TextAppearance.App.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Widget.App.TextInputEditText.FilledBox" parent="@style/Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <!-- left and right padding -->
+        <item name="android:paddingStart">2dp</item>
+        <item name="android:paddingEnd">2dp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+
+        <!-- top and bottom padding -->
+        <item name="android:paddingTop">30dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">
+            @style/MaterialAlertDialog.App.Title.Text
+        </item>
+        <item name="colorPrimary">@color/cyan_600</item>
+        <item name="colorSecondary">@color/gray_500</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/gray_900</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ThemeOverlay.App.MaterialAlertDialog.Animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="Widget.App.Button.TextButton.Icon" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="rippleColor">@color/text_button_ripple_color</item>
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+        <item name="iconSize">16dp</item>
+        <item name="iconGravity">start</item>
+        <item name="iconPadding">5dp</item>
+    </style>
+</resources>

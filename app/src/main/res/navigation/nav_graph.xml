@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.zebrascannerappdemo.presentation.ui.main.fragments.home.HomeFragment"
+        android:label="@string/home_title"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_registerStockFragment"
+            app:destination="@id/registerStockFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerStockFragment"
+        android:name="com.example.zebrascannerappdemo.presentation.ui.main.fragments.register.RegisterStockFragment"
+        android:label="@string/register_stock_title"
+        tools:layout="@layout/fragment_register"/>
+</navigation>

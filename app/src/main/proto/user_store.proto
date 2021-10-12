@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.example.zebrascannerappdemo.data.storage.prefs.proto";
+option java_multiple_files = true;
+
+message UserData {
+  string name = 1;
+  string location_name = 3;
+}
